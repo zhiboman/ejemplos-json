@@ -1,0 +1,101 @@
+<!DOCTYPE html>   
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	
+
+		
+			<h1>Tutorial JSON (javascript Object Notation)</h1>
+			<div id="contenedor">
+			</div>
+		
+
+							
+			<script type="text/javascript">
+			
+			
+			//********* LITERALES DE MATRIZ ********
+			
+			
+			var nombre = [ " Carlos " , " Jorge " , " Guzman " ];
+			
+			alert(nombre);
+			document.getElementById('contenedor').innerHTML = nombre[1];
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+/* 			alert(nombre[1]); */
+			
+			var variable = { "apellido" : " Berganza " };
+			
+/* 			document.getElementById('contenedor').innerHTML = variable.apellido; */
+			
+			
+/*
+			var info = {
+				full_name : "Luis Berganza",
+				getName : function() {
+					alert(full_name);
+				}
+			};
+*/
+			
+			
+			
+			
+			
+			//********* LITERALES DE OBJETO ********* 
+						
+/*
+	1º			var persona    = {"nombre":"Antonio", "edad":40, "hijos":true };
+
+				alert(persona.hijos);    // .nombre  .edad   .hijos
+*/
+
+
+
+/*
+	2º			var persona    = new Object(); 
+
+				persona.nombre = "Luis";
+				alert(persona.nombre)
+*/
+
+
+
+/*
+		3º		var persona2 = {"nombre":"Rodrigo", "edad":55, "hijos":["Jose","Carlos","Inmaculada"] };
+				alert(persona2.hijos[0]);
+*/
+
+
+
+/*
+	    4º		var persona3 = [
+				
+								{"nombre":"Rodrigo", "edad":55, "hijos":["Jose","Carlos","Inmaculada"] },
+								{"nombre":"Antonio", "edad":40, "hijos":["Maria","Carmen"]
+									
+								}];
+
+				alert(persona3[1].edad);
+*/
+
+
+
+
+			</script>
+		
+
+</body>
+</html>

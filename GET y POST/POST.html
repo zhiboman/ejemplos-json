@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Tutorial JSON - POST</title>
+         
+    </head>
+<body>
+ 
+
+<form id='formulario'>
+    <div><input type='text' name='nombre' placeholder='Nombre' /></div>
+    <div><input type='text' name='apellido' placeholder='Apellido' /></div>
+    <div><input type='text' name='email' placeholder='Email' /></div>
+    <div><input type='submit' value='Enviar' /></div>
+</form>
+ 
+
+<div id='contenedor'></div>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
+<script>
+$(document).ready(function(){
+    $('#formulario').submit(function(){
+     
+
+        $('#contenedor').html("<b>Enviando...</b>");
+         
+
+        $.post('archivo.php', $(this).serialize(), function(data){
+             
+
+            $('#contenedor').html(data);
+             
+        }).fail(function() {
+
+            alert( "Envío fallido." );
+             
+        });
+
+        return false;
+ 
+    });
+});
+</script>
+ 
+</body>
+</html>

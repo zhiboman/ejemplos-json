@@ -1,0 +1,22 @@
+<!DOCTYPE>   
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+			<h1>Tutorial JSON - GET y POST </h1>
+			<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					$.ajax({
+						"url":"index.php",
+						"type":"GET",
+						"data":{},
+						"dataType":"JSON"
+					}).done(function(data){
+						console.log(data);
+					});
+				});
+			</script>
+</body>
+</html>

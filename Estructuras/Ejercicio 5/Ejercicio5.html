@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+	<h1>Tutorial JSON</h1>
+	
+	<div id="contenedor"></div>
+	
+	
+	<script type="text/javascript">
+		
+		var varios = {
+			
+			"nombre": "Luis Berganza",
+			"id":313,
+			"profesor":true,
+			"idCursos":[53,765,675],
+			"cursos": {
+				"marketing":"Mi primera aplicacion para iPhone",
+				"programacion": [
+					"Objective-C",
+					"Xcode",
+					"Json"
+				
+				]
+			},
+			"vacaciones":null
+			
+			
+			
+			
+		}
+		
+		
+		
+		alert(varios.nombre);
+		alert(varios.idCursos[1]);
+		alert(varios.cursos.marketing);
+		alert(varios.cursos.programacion[2]);
+		
+		
+		
+	</script>
+
+	</body>
+	
+</html>

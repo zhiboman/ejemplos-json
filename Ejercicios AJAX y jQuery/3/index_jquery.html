@@ -1,0 +1,42 @@
+<!DOCTYPE>   
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+<body>
+			<h1>Tutorial JSON - jQuery </h1>
+			
+			<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+			
+			
+			<!-- Empecemos por observar el objeto de documento HTML:
+Tenemos un elemento div que tiene una lista desordenada vacía. El objetivo de este script es para rellenar la lista no ordenada con elementos de la lista haciendo click en el botón. El elemento de botón de entrada tiene un id con el valor "lista", y el controlador de eventos click estará ligada a este botón. Desde AJAX es asíncrona y como estamos haciendo un callback a este botón, no se realizan las llamadas AJAX a nuestro servidor cuando se carga el objeto documento. La estructura HTML solo se carga en la página, y los acontecimientos que están vinculados a estos elementos. -->
+
+			<input type="button" id="lista" value="Mostrar Lista" />
+			<div id="contenedor">
+				<ul id="contenedorLista">
+				</ul>
+			</div>
+			
+			
+			
+			
+			
+			<!-- Cuando hacemos clic en el botón, vamos a utilizar el método getJSON para hacer una llamada AJAX al servidor web para recuperar los datos JSON. Dado que estamos recibiendo una variedad indefinida de elementos, en este caso profesores, pasaremos los datos recuperados en cada iterador jQuery para recuperar un elemento a la vez. Dentro del iterador, estamos construyendo una cadena, que se adjunta como un elemento de la lista a la que llamamos “contenedorLista”, y la pasamos como lista desordenada. -->
+			<script>
+				$(document).ready(function() {
+					$("#lista").click(function(){
+						$.getJSON("index.php", function(data){
+							if(data){
+								$.each(data, function(key, value){
+									$("#contenedorLista").append(
+									"<li>El ID de Profesor es "+ value.numeroID+" y su nombre es "+value.nombre+" "+value.apellido+"</li>");
+								});
+							}
+						});
+					});
+				});
+			</script>
+			
+</body>
+</html>

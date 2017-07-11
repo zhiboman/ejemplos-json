@@ -1,0 +1,698 @@
+var aeropuertos = [
+    {
+        "name": "Aeropuerto Reina Sofia -Tenerife Sur-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -16.57776,
+            "lat": 28.04887
+        }
+    },
+    {
+        "name": "Aeropuerto Los Rodeos -Tenerife-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -16.34591,
+            "lat": 28.48832
+        }
+    },
+    {
+        "name": "Terminal de Carga 2 -Acciona - Groundforce-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.39551,
+            "lat": 27.92591
+        }
+    },
+    {
+        "name": "Hangar Isla Airways (Restringido) -Aerop Las Palmas-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.3948,
+            "lat": 27.92479
+        }
+    },
+    {
+        "name": "Hangar Binter TechniK -Aeropuerto Las Palmas-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.39428,
+            "lat": 27.92551
+        }
+    },
+    {
+        "name": "Hangar Spanair (Restringido) -Aeropuerto Las Palmas-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.39275,
+            "lat": 27.92916
+        }
+    },
+    {
+        "name": "Control Seguridad Barrera Norte -Aeropuerto Las Palmas-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.39256,
+            "lat": 27.93444
+        }
+    },
+    {
+        "name": "Control de Seguridad Acceso Pistas (Restringido)-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.39225,
+            "lat": 27.93163
+        }
+    },
+    {
+        "name": "Control Aduanas-Guardia Civil -Aeropuerto-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.39199,
+            "lat": 27.93532
+        }
+    },
+    {
+        "name": "Terminal de Carga 1 -Iberia-Aduanas-Consignatarias-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.39134,
+            "lat": 27.93476
+        }
+    },
+    {
+        "name": "Seguridad Aerea -Inspeccion-Aeropuerto Las Palmas-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.39083,
+            "lat": 27.9355
+        }
+    },
+    {
+        "name": "Salidas Vuelos Comunitarios y Nacionales -Aeropuerto Las Palmas-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.39055,
+            "lat": 27.93701
+        }
+    },
+    {
+        "name": "Salidas Vuelos Interinsulares -Aeropuerto Las Palmas-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.38915,
+            "lat": 27.93924
+        }
+    },
+    {
+        "name": "Control Seguridad Barrera Sur -Aeropuerto Las Palmas-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.38791,
+            "lat": 27.94126
+        }
+    },
+    {
+        "name": "Almacenes Spanair-Catering -Las Palmas-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.3874,
+            "lat": 27.94257
+        }
+    },
+    {
+        "name": "FIC - Canarias (Aviacion Civil-Licencias-TMAs)-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -15.38591,
+            "lat": 27.94739
+        }
+    },
+    {
+        "name": "Aeropuerto. (Lisboa)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -9.13775,
+            "lat": 38.77013
+        }
+    },
+    {
+        "name": "Aeropuerto. (Faro)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -7.97197,
+            "lat": 37.0154
+        }
+    },
+    {
+        "name": "Aeropuerto. (Badajoz)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -6.81921,
+            "lat": 38.89388
+        }
+    },
+    {
+        "name": "Aeropuerto. (Jerez)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -6.06131,
+            "lat": 36.74832
+        }
+    },
+    {
+        "name": "Aeropuerto. (Sevilla-San Pablo)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -5.89796,
+            "lat": 37.42243
+        }
+    },
+    {
+        "name": "Aeropuerto. (Gibraltar)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -5.34789,
+            "lat": 36.15365
+        }
+    },
+    {
+        "name": "Aeropuerto. (Cordoba)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -4.84776,
+            "lat": 37.84172
+        }
+    },
+    {
+        "name": "Aeropuerto. (Malaga)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -4.49298,
+            "lat": 36.67486
+        }
+    },
+    {
+        "name": "Aeropuerto de Malaga T2>34-952048804-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -4.48996,
+            "lat": 36.67546
+        }
+    },
+    {
+        "name": "Aeropuerto de Malaga T1-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -4.48812,
+            "lat": 36.67345
+        }
+    },
+    {
+        "name": "Aeropuerto. D. Quijote",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.99816,
+            "lat": 38.86403
+        }
+    },
+    {
+        "name": "Aeropuerto de Ciudad Real-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.99333,
+            "lat": 38.86389
+        }
+    },
+    {
+        "name": "Aeropuerto. (Granada)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.77498,
+            "lat": 37.18764
+        }
+    },
+    {
+        "name": "Aeropuerto de Melilla-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -2.95724,
+            "lat": 35.27671
+        }
+    },
+    {
+        "name": "Aeropuerto. (Almeria)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -2.3722,
+            "lat": 36.84589
+        }
+    },
+    {
+        "name": "Aeropuerto. (Albacete)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -1.862,
+            "lat": 38.95325
+        }
+    },
+    {
+        "name": "Aeropuerto. (Murcia-San Javier)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -0.81827,
+            "lat": 37.77421
+        }
+    },
+    {
+        "name": "Aeropuerto. (Alicante-El Altet)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -0.5576,
+            "lat": 38.28443
+        }
+    },
+    {
+        "name": "Aeropuerto. (Valencia-Manises)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -0.47616,
+            "lat": 39.49285
+        }
+    },
+    {
+        "name": "Aerodromo de Mutxamel-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -0.47343,
+            "lat": 38.44063
+        }
+    },
+    {
+        "name": "Aeropuerto Castellon",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 0.0678,
+            "lat": 40.20282
+        }
+    },
+    {
+        "name": "Aeropuerto. (Ibiza-San Jose)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 1.36851,
+            "lat": 38.87551
+        }
+    },
+    {
+        "name": "Zona Ind. de Amorim-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.74346,
+            "lat": 41.39674
+        }
+    },
+    {
+        "name": "Aeropuerto. (Oporto-Francisco Sa Carneiro)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.67341,
+            "lat": 41.23717
+        }
+    },
+    {
+        "name": "Pol.Ind. MAIA Oporto-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.64448,
+            "lat": 41.25719
+        }
+    },
+    {
+        "name": "Aeropuerto de Vigo>34-986268200-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.63269,
+            "lat": 42.22579
+        }
+    },
+    {
+        "name": "Pol.Ind. OIA Aveiro-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.55493,
+            "lat": 40.55645
+        }
+    },
+    {
+        "name": "Zona Ind. NORTE Agueda PORTUGAL-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.49085,
+            "lat": 40.59494
+        }
+    },
+    {
+        "name": "Aeropuerto. (Santiago-Lavacolla)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.41646,
+            "lat": 42.89912
+        }
+    },
+    {
+        "name": "Aeropuerto de A CoruÃ±a>34-981187200-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.37867,
+            "lat": 43.3026
+        }
+    },
+    {
+        "name": "Aeropuerto. (A CoruÃ±a)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.37687,
+            "lat": 43.30552
+        }
+    },
+    {
+        "name": "Pol.Ind. PENSO MELGAÃ‡O Alvaredo PORTUGAL-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -8.32083,
+            "lat": 42.09278
+        }
+    },
+    {
+        "name": "Aeropuerto. (Asturias-Ranon)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -6.03101,
+            "lat": 43.55956
+        }
+    },
+    {
+        "name": "Aeropuerto. (Leon)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -5.64592,
+            "lat": 42.59151
+        }
+    },
+    {
+        "name": "Aeropuerto. (Salamanca-Matacan)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -5.50228,
+            "lat": 40.94035
+        }
+    },
+    {
+        "name": "Aeropuerto. (Valladolid)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -4.84535,
+            "lat": 41.70664
+        }
+    },
+    {
+        "name": "Aeropuerto. (Santander-Parayas)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.82374,
+            "lat": 43.42321
+        }
+    },
+    {
+        "name": "Aerodromo de Cuatro Vientos-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.77863,
+            "lat": 40.36764
+        }
+    },
+    {
+        "name": "Aeropuerto. (Burgos-Villafria)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.62228,
+            "lat": 42.35691
+        }
+    },
+    {
+        "name": "Helipuerto RedueÃ±a-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.60405,
+            "lat": 40.815
+        }
+    },
+    {
+        "name": "Aeropuerto de Barajas -Madrid T4-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.58976,
+            "lat": 40.49029
+        }
+    },
+    {
+        "name": "Helipuerto Campo Real-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.37764,
+            "lat": 40.33339
+        }
+    },
+    {
+        "name": "Aeropuerto. (Torrejon de Ardoz-Madrid)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.47644,
+            "lat": 40.46182
+        }
+    },
+    {
+        "name": "Aeropuerto de Barajas -Madrid T1-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.57111,
+            "lat": 40.46363
+        }
+    },
+    {
+        "name": "Aeropuerto de Barajas -Madrid T2-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.56951,
+            "lat": 40.46826
+        }
+    },
+    {
+        "name": "Aeropuerto. (Madrid-Barajas)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.56769,
+            "lat": 40.46842
+        }
+    },
+    {
+        "name": "Aeropuerto de Barajas -Madrid T3-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -3.5704,
+            "lat": 40.47081
+        }
+    },
+    {
+        "name": "Aeropuerto. (Reus)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 1.1563,
+            "lat": 41.14442
+        }
+    },
+    {
+        "name": "Centro de Control Aereo del Aeropuerto de Barcelona GAVA-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.005,
+            "lat": 41.28705
+        }
+    },
+    {
+        "name": "Aeropuerto de Barcelona T1 Terminal 1-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.07282,
+            "lat": 41.28887
+        }
+    },
+    {
+        "name": "Aeropuerto de Barcelona Puente Aereo Terminal 1 T1-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.07073,
+            "lat": 41.28989
+        }
+    },
+    {
+        "name": "Aeropuerto. (Alfes-Albatarrech)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 0.65471,
+            "lat": 41.54677
+        }
+    },
+    {
+        "name": "Aeropuerto. (Igualada-Odena)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 1.6525,
+            "lat": 41.58669
+        }
+    },
+    {
+        "name": "Aeropuerto. (Zaragoza)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -1.00779,
+            "lat": 41.6607
+        }
+    },
+    {
+        "name": "Aeroport de Lleida Alguaire-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 0.54484,
+            "lat": 41.72905
+        }
+    },
+    {
+        "name": "Aeropuerto. (LogroÃ±o-Agoncillo)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -2.31475,
+            "lat": 42.45634
+        }
+    },
+    {
+        "name": "Aeropuerto. (Pamplona-Noain)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -1.64017,
+            "lat": 42.76715
+        }
+    },
+    {
+        "name": "Aeropuerto. (Vitoria-Gasteiz) Foronda",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -2.73118,
+            "lat": 42.88395
+        }
+    },
+    {
+        "name": "Aeropuerto. (Bilbao-Sondika)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -2.91111,
+            "lat": 43.30249
+        }
+    },
+    {
+        "name": "Aeropuerto de Bilbao -Loiu>34-944869664-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -2.90593,
+            "lat": 43.3064
+        }
+    },
+    {
+        "name": "Aeropuerto. (San Sebastian)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": -1.79208,
+            "lat": 43.35566
+        }
+    },
+    {
+        "name": "Aeropuerto. (Palma de Mallorca-Son Sant Joan)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.73187,
+            "lat": 39.54945
+        }
+    },
+    {
+        "name": "Aeropuerto. (Menorca-Mahon)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 4.22383,
+            "lat": 39.86516
+        }
+    },
+    {
+        "name": "Torre de Control Aeropuerto de Barcelona-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.10062,
+            "lat": 41.29838
+        }
+    },
+    {
+        "name": "Aeropuerto. (Barcelona-El Prat)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.07976,
+            "lat": 41.30062
+        }
+    },
+    {
+        "name": "Aeropuerto de Barcelona Terminal A Internacional-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.07328,
+            "lat": 41.3018
+        }
+    },
+    {
+        "name": "Aeropuerto de Barcelona Terminal B Nacional-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.07675,
+            "lat": 41.30317
+        }
+    },
+    {
+        "name": "Aeropuerto de Barcelona Terminal C Puente Aereo-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.08195,
+            "lat": 41.30428
+        }
+    },
+    {
+        "name": "Terminal Corporativa (Carpeta Aeropuertos) EL PRAT-",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.08243,
+            "lat": 41.30623
+        }
+    },
+    {
+        "name": "Aeropuerto. (Sabadell)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.10364,
+            "lat": 41.52213
+        }
+    },
+    {
+        "name": "Aeropuerto. (Girona)",
+        "type": "Aeropuerto",
+        "coords": {
+            "lng": 2.7646,
+            "lat": 41.89917
+        }
+    }
+]
